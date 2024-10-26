@@ -1,17 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
+    <style>
+        /* Agar pesan peringatan tersembunyi pada awalnya */
+        .message {
+            display: none;
+            color: red;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        
-    </header>
-    <main></main>
-    <footer></footer>
-<script src="../js/script.js"></script>    
+    <div class="container">
+        <img src="../image/pasien.png" alt="">
+        <form>
+            <div class="col-form">
+                <label for="nama">Nama lengkap</label>
+                <p><input type="text" id="nama" name="nama"></p>
+                <p><span class="message">Harap isi Nama lengkap</span></p>
+            </div>
+            <div class="col-form">
+                <label for="tempat">Tempat lahir</label>
+                <p><input type="text" id="tempat" name="tempat"></p>
+                <p><span class="message">Harap isi tempat lahir</span></p>
+            </div>
+            <div class="col-form">
+                <label for="tanggal">Tanggal lahir</label>
+                <p><input type="date" id="tanggal" name="tanggal"></p>
+                <p><span class="message">Harap isi tanggal lahir</span></p>
+            </div>
+            <div class="col-form">
+                <label>Jenis kelamin</label>
+                <p>
+                    <label for="jk_laki">
+                        <input type="radio" name="jenis_kelamin" id="jk_laki" value="laki-laki">
+                        Laki-laki
+                    </label>
+                    <label for="jk_perempuan">
+                        <input type="radio" name="jenis_kelamin" id="jk_perempuan" value="perempuan">
+                        Perempuan
+                    </label>
+                </p>
+                <p><span class="message">Harap pilih jenis kelamin</span></p>
+            </div>
+            <div class="col-form">
+                <label for="alamat">Alamat</label>
+                <p><input type="text" id="alamat" name="alamat"></p>
+                <p><span class="message">Harap isi alamat</span></p>
+            </div>
+            <div class="col-form">
+                <label for="keluhan">Keluhan</label>
+                <p><input type="text" id="keluhan" name="keluhan"></p>
+                <p><span class="message" id="input_keluhan">Harap isi keluhan</span></p>
+            </div>
+            <div class="btn-post">
+                <button class="btn-post" type="button">Daftar</button>
+            </div>
+        </form>
+    </div>
+    <script src="../js/script.js"></script>
 </body>
 </html>
