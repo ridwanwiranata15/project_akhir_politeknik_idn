@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/admin.css">
+    
     <title>Nusantara Hospital</title>
 </head>
 <body>
@@ -15,14 +16,14 @@
         <div class="searchBar">
             <input type="text" placeholder="Search">
         </div>
-        <div class="message">
+        <!-- <div class="message">
             <div class="circle">
                 <img src="" alt="searchBtn" class="searchBtn" id="searchBtn" alt="searchBtn">
             </div>
             <div class="dp">
                 <img src="" alt="searchBtn" class="searchBtn" id="searchBtn" alt="searchBtn">
             </div>
-        </div>
+        </div> -->
     </header>
     <div class="main">
         <div class="main-nav-menu">
@@ -71,47 +72,84 @@
                             <td>0857-7775-0854</td>
                             <td>Anak</td>
                             <td>
-                                <button>Edit</button>
-                                <button>Hapus</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>RIdwan</td>
-                            <td>Anak</td>
-                            <td>10.00 - 12.00</td>
-                            <td>0857-7775-0854</td>
-                            <td>Anak</td>
-                            <td>
-                                <button>Edit</button>
-                                <button>Hapus</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>RIdwan</td>
-                            <td>Anak</td>
-                            <td>10.00 - 12.00</td>
-                            <td>0857-7775-0854</td>
-                            <td>Anak</td>
-                            <td>
-                                <button>Edit</button>
-                                <button>Hapus</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>RIdwan</td>
-                            <td>Anak</td>
-                            <td>10.00 - 12.00</td>
-                            <td>0857-7775-0854</td>
-                            <td>Anak</td>
-                            <td>
-                                <button>Edit</button>
+                                <button onclick="edit(1)">Edit</button>
                                 <button>Hapus</button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="main-content-footer"></div>
+            <div class="main-content-footer">
+                <p>Copyright &copy; 2024 - Nusantara Hospital</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-create">
+        <div class="modal-create-content">
+            <div class="modal-create-content-header">
+                <h1></h1>
+                <span>X</span>
+            </div>
+            <div class="modal-create-content-body">
+                <form>
+                   <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                       <td></td>
+                       <td class="alert-message">Nama wajib di isi</td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                       <td></td>
+                       <td class="alert-message">Nama wajib di isi</td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                       <td></td>
+                       <td class="alert-message">Nama wajib di isi</td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                       <td></td>
+                       <td class="alert-message">Nama wajib di isi</td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                       <td></td>
+                       <td class="alert-message">Nama wajib di isi</td>
+                    </tr>
+                   </table>
+                </form>
+            </div>
+            <div class="modal-create-content-footer">
+                <button>Tambah</button>
+            </div>
         </div>
     </div>
     <script src="../js/admin.js"></script>

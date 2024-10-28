@@ -1,0 +1,15 @@
+.card{
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    width: 320px;
+    display: block;
+    margin: 290px auto;
+}
+
+.card-footer button{
+    background-color: lawngreen;
+}
+a{
+    text-decoration: none;
+}
