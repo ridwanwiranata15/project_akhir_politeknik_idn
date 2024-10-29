@@ -169,7 +169,7 @@ header{
 .main-content-body td:last-child button:first-child{
     background-color:yellow;
 }
-.main-content-body td:last-child button:last-child{
+.main-content-body td:last-child button:nth-child(2){
     background-color:red;
     color: white;
 }
