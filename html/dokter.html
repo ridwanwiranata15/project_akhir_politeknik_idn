@@ -70,7 +70,7 @@
                             <td>
                                 <button onclick="editDoctor(1)">Edit</button>
                                 <button>Hapus</button>
-                                <button>Detail</button>
+                                <button onclick="DetailDoctor(1)">Detail</button>
                             </td>
                         </tr>
                     </tbody>
@@ -127,6 +127,11 @@
                         <td><input type="text"></td>
                     </tr>
                     <tr>
+                        <td>Poli</td>
+                        <td>:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
                         <td></td>
                        <td></td>
                        <td class="alert-message">Kontak darurat wajib di isi</td>
@@ -155,7 +160,8 @@
                 </form>
             </div>
             <div class="modal-create-content-footer">
-                <button>Tambah</button>
+                <button id="tambah">Tambah</button>
+                <button id="ubah">Ubah</button>
             </div>
         </div>
     </div>
