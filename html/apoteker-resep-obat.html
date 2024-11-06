@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/admin.css">
-    <link rel="stylesheet" href="../css/apoteker.css">
+    <link rel="stylesheet" href="../css/apoteker-resep-obat.css">
     <title>Nusantara Hospital</title>
 </head>
 <body>
@@ -21,16 +21,10 @@
         <div class="main-nav-menu">
             <div class="menu-nav-list">
                 <div class="list-section">
-                    <h3>Pasien</h3>
+                    <h3>Obat</h3>
                 </div>
                 <div class="list-section">
-                    <h3>Dokter</h3>
-                </div>
-                <div class="list-section">
-                    <h3>Apoteker</h3>
-                </div>
-                <div class="list-section">
-                    <h3>Poli</h3>
+                    <h3>Resep obat</h3>
                 </div>
             </div>
             <div class="sign-out">
@@ -39,7 +33,7 @@
         </div>
         <div class="main-content">
             <div class="main-content-header">
-                <h1>Data Apoteker</h1>
+                <h1>Data Obat</h1>
                 <div class="header-button">
                     <button>Tambah</button>
                 </div>
@@ -48,14 +42,13 @@
                 <table>
                     <thead>
                         <tr>
-                            <th class="apoteker-padding">Nama</th>
-                            <th class="apoteker-padding">telepon</th>
-                            <th class="apoteker-padding">Alamat</th>
-                            <th class="apoteker-padding">Nomor str</th>
-                            <th class="apoteker-padding">bergabung</th>
-                            <th class="alert-message">Shif</th>
-                            <th class="alert-message">Status</th>
-                            <th class="apoteker-padding">Aksi</th>
+                            <th class="resep-obat-padding">Nama Obat</th>
+                            <th class="resep-obat-padding">Jumlah</th>
+                            <th class="resep-obat-padding">Dosis</th>
+                            <th class="resep-obat-padding">Instruktur</th>
+                            <th class="resep-obat-padding">Tanggal resep</th>
+                            <th class="resep-obat-padding">Keterangan</th>
+                            <th class="resep-obat-padding">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -65,12 +58,11 @@
                             <td>10.00 - 12.00</td>
                             <td>0857-7775-0854</td>
                             <td>Anak</td>
-                            <td class="alert-message">Email</td>
-                            <td class="alert-message">Password</td>
+                            <td class="resep-obat-padding">Email</td>
+                            <td class="resep-obat-padding">Password</td>
                             <td>
-                                <button onclick="editApotecer(1)">Edit</button>
+                                <button onclick="editApotekerResepObat(1)">Edit</button>
                                 <button>Hapus</button>
-                                <button onclick="DetailApotecer(1)">Detail</button>
                             </td>
                         </tr>
                     </tbody>
@@ -92,7 +84,7 @@
                 <form>
                    <table>
                     <tr>
-                        <td>Nama</td>
+                        <td>Nama Obat</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
@@ -103,7 +95,7 @@
                        <td class="alert-message">Nama wajib di isi</td>
                     </tr>
                     <tr>
-                        <td>Nomor telepon</td>
+                        <td>Jumlah</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
@@ -114,7 +106,7 @@
                        <td class="alert-message">Spesialis wajib di isi</td>
                     </tr>
                     <tr>
-                        <td>Alamat</td>
+                        <td>Dosis</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
@@ -125,13 +117,13 @@
                        <td class="alert-message">Jadwal praktek wajib di isi</td>
                     </tr>
                     <tr>
-                        <td>Nomor Str</td>
+                        <td>Instruktur</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
                     </tr>
                     <tr>
-                        <td>Tanggal bergabung</td>
+                        <td>Tanggal resep</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
@@ -142,7 +134,7 @@
                        <td class="alert-message">Kontak darurat wajib di isi</td>
                     </tr>
                     <tr>
-                        <td>Shift</td>
+                        <td>Keterangan</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
@@ -150,18 +142,7 @@
                     <tr>
                         <td></td>
                        <td></td>
-                       <td class="alert-message">Email wajib di isi</td>
-                    </tr>
-                    <tr>
-                        <td>Status</td>
-                        <td>:</td>
-                        <td><input type="text"></td>
-                        <td class="detail">detail</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                       <td></td>
-                       <td class="alert-message">Password wajib di isi</td>
+                       <td class="alert-message">Kontak darurat wajib di isi</td>
                     </tr>
                    </table>
                 </form>
@@ -173,6 +154,6 @@
         </div>
     </div>
     <script src="../js/admin.js"></script>
-    <script src="../js/apoteker.js"></script>
+    <script src="../js/apoteker-resep-obat.js"></script>
 </body>
 </html>

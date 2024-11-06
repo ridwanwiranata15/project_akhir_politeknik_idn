@@ -97,10 +97,6 @@ header{
     left: 19px;
     top: 8px;
 }
-
-.main-container{
-    
-}
 .circle{
     height: 42px;
 }
@@ -142,9 +138,9 @@ header{
     margin-left: 10px;
     width: 100px;
 }
-.main-content-body th{
+/* .main-content-body th{
     padding-right: 149px;
-}
+} */
 .main-content-header{
     margin-bottom: 15px;
     background-color: #fff;
@@ -213,8 +209,8 @@ header{
     transition: 0.5s ease;
 }
 /* input form */
-.modal-create-content-body input{
-    width: 1200px;
+.modal-create-content-body input, select{
+    width: 1150px;
     padding: 10px;
     margin-left: 10px;
 }

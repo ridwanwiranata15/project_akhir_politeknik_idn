@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/admin.css">
-    <link rel="stylesheet" href="../css/apoteker.css">
+    <link rel="stylesheet" href="../css/poli.css">
     <title>Nusantara Hospital</title>
 </head>
 <body>
@@ -48,14 +48,14 @@
                 <table>
                     <thead>
                         <tr>
-                            <th class="apoteker-padding">Nama</th>
-                            <th class="apoteker-padding">telepon</th>
-                            <th class="apoteker-padding">Alamat</th>
-                            <th class="apoteker-padding">Nomor str</th>
-                            <th class="apoteker-padding">bergabung</th>
-                            <th class="alert-message">Shif</th>
-                            <th class="alert-message">Status</th>
-                            <th class="apoteker-padding">Aksi</th>
+                            <th class="poli-padding">Nama</th>
+                            <th class="poli-padding">Lokasi</th>
+                            <th class="poli-padding">Jadwal</th>
+                            <th class="poli-padding">Hari</th>
+                            <th class="poli-padding">Kapasitas harian</th>
+                            <th class="alert-message">Kepala poli</th>
+                            <th class="alert-message">Jumlah dokter</th>
+                            <th class="poli-padding">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -68,9 +68,9 @@
                             <td class="alert-message">Email</td>
                             <td class="alert-message">Password</td>
                             <td>
-                                <button onclick="editApotecer(1)">Edit</button>
+                                <button onclick="editPoli(1)">Edit</button>
                                 <button>Hapus</button>
-                                <button onclick="DetailApotecer(1)">Detail</button>
+                                <button onclick="DetailPoli(1)">Detail</button>
                             </td>
                         </tr>
                     </tbody>
@@ -103,7 +103,7 @@
                        <td class="alert-message">Nama wajib di isi</td>
                     </tr>
                     <tr>
-                        <td>Nomor telepon</td>
+                        <td>Lokasi</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
@@ -114,7 +114,7 @@
                        <td class="alert-message">Spesialis wajib di isi</td>
                     </tr>
                     <tr>
-                        <td>Alamat</td>
+                        <td>Jadwal</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
@@ -125,13 +125,13 @@
                        <td class="alert-message">Jadwal praktek wajib di isi</td>
                     </tr>
                     <tr>
-                        <td>Nomor Str</td>
+                        <td>Hari</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
                     </tr>
                     <tr>
-                        <td>Tanggal bergabung</td>
+                        <td>Kapasitas</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
@@ -140,28 +140,6 @@
                         <td></td>
                        <td></td>
                        <td class="alert-message">Kontak darurat wajib di isi</td>
-                    </tr>
-                    <tr>
-                        <td>Shift</td>
-                        <td>:</td>
-                        <td><input type="text"></td>
-                        <td class="detail">detail</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                       <td></td>
-                       <td class="alert-message">Email wajib di isi</td>
-                    </tr>
-                    <tr>
-                        <td>Status</td>
-                        <td>:</td>
-                        <td><input type="text"></td>
-                        <td class="detail">detail</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                       <td></td>
-                       <td class="alert-message">Password wajib di isi</td>
                     </tr>
                    </table>
                 </form>
@@ -173,6 +151,6 @@
         </div>
     </div>
     <script src="../js/admin.js"></script>
-    <script src="../js/apoteker.js"></script>
+    <script src="../js/poli.js"></script>
 </body>
 </html>

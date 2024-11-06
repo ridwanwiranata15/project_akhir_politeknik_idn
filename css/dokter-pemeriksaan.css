@@ -1,0 +1,12 @@
+.main-content-body tr th{
+    padding-right: 130px;
+}
+#tambah{
+    background-color: lawngreen;
+}
+.modal-create-content-footer button{
+    background-color: lawngreen;
+}
+.modal-create-content-body input{
+    display: none;
+}
