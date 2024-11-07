@@ -1,3 +1,15 @@
 .poli-padding{
     padding-right:150px ;
 }
+td:last-child button:first-child{
+    background-color: rgb(255,255,0);
+}
+td:last-child button:nth-child(2){
+    background-color: rgb(255,0,0);
+    color: rgb(255,255,255);
+}
+td:last-child button:last-child{
+    background-color: rgb(0,0,255);
+    color: rgb(255,255,255);
+    display: none;
+}

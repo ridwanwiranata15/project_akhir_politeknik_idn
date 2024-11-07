@@ -16,6 +16,8 @@ function editApotecer(id){
     inputs[4].value = apotecers[4].textContent;
     inputs[5].value = apotecers[5].textContent;
     inputs[6].value = apotecers[6].textContent;
+    inputs[7].value = apotecers[7].textContent;
+    inputs[8].value = apotecers[8].textContent;
     document.querySelector("#ubah").style.display = "block";
     document.querySelector("#tambah").style.display = "none";
     document.querySelector("#ubah").classList.add("btn-update-data")
@@ -41,6 +43,8 @@ document.querySelector(".header-button button").addEventListener("click", functi
     inputs[4].value = "";
     inputs[5].value = "";
     inputs[6].value = "";
+    inputs[7].value = "";
+    inputs[8].value = "";
 })
 document.querySelector(".modal-create-content-header span").addEventListener("click", function(e){
     e.preventDefault();
@@ -67,4 +71,5 @@ function DetailApotecer(id){
     details[4].innerText = apotecers[4].textContent;
     details[5].innerText = apotecers[5].textContent;
     details[6].innerText = apotecers[6].textContent;
+    details[7].innerText = apotecers[7].textContent;
 }

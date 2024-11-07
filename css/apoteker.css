@@ -12,3 +12,6 @@ td button:nth-child(3){
 .apoteker-padding{
     padding-right: 150px;
 }
+td button:first-child{
+    background-color: rgb(255,255,0);
+}

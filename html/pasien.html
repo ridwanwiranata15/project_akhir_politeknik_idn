@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/admin.css">
-    <link rel="stylesheet" href="../css/apoteker.css">
+    <link rel="stylesheet" href="../css/pasien.css">
     <title>Nusantara Hospital</title>
 </head>
 <body>
@@ -39,42 +39,39 @@
         </div>
         <div class="main-content">
             <div class="main-content-header">
-                <h1>Data Apoteker</h1>
-                <div class="header-button">
-                    <button>Tambah</button>
-                </div>
+                <h1>Data Pasien</h1>
             </div>
             <div class="main-content-body">
                 <table>
                     <thead>
                         <tr>
-                            <th class="apoteker-padding">Nama</th>
-                            <th class="apoteker-padding">telepon</th>
-                            <th class="apoteker-padding">Alamat</th>
-                            <th class="apoteker-padding">Nomor str</th>
-                            <th class="apoteker-padding">bergabung</th>
-                            <th class="alert-message">Shif</th>
-                            <th class="alert-message">Status</th>
-                            <th class="alert-message">Email</th>
-                            <th class="alert-message">Password</th>
-                            <th class="apoteker-padding">Aksi</th>
+                            <th class="pasien-px">Nama</th>
+                            <th class="pasien-px">Tempat lahir</th>
+                            <th class="pasien-px">Tanggal lahir</th>
+                            <th class="pasien-px">Jenis kelamin</th>
+                            <th class="pasien-px">Alamat</th>
+                            <th class="pasien-px pasien-hide">Keluhan</th>
+                            <th class="pasien-px pasien-hide">Kode pendaftaraan</th>
+                            <th class="pasien-px pasien-hide">Nomor whatsapp</th>
+                            <th class="pasien-px">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr data-id="1">
-                            <td>RIdwan</td>
-                            <td>Anak</td>
-                            <td>10.00 - 12.00</td>
-                            <td>0857-7775-0854</td>
-                            <td>Anak</td>
-                            <td class="alert-message">Email</td>
-                            <td class="alert-message">Password</td>
-                            <td class="alert-message">Password</td>
-                            <td class="alert-message">Tujuh</td>
-                            <td>
-                                <button onclick="editApotecer(1)">Edit</button>
+                            <td class="pasien-px pasien-hide">RIdwan</td>
+                            <td class="pasien-px pasien-hide">Anak</td>
+                            <td class="pasien-px pasien-hide">10.00 - 12.00</td>
+                            <td class="pasien-px pasien-hide">0857-7775-0854</td>
+                            <td class="pasien-px pasien-hide">Anak</td>
+                            <td class="">Email</td>
+                            <td class="">Password</td>
+                            <td>dede</td>
+                            <td>tiga</td>
+                            <td>empat</td>
+                            <td class="pasien-px">
+                                <button onclick="editPasien(1)">Edit</button>
                                 <button>Hapus</button>
-                                <button onclick="DetailApotecer(1)">Detail</button>
+                                <button onclick="DetailPasien(1)">Detail</button>
                             </td>
                         </tr>
                     </tbody>
@@ -107,7 +104,7 @@
                        <td class="alert-message">Nama wajib di isi</td>
                     </tr>
                     <tr>
-                        <td>Nomor telepon</td>
+                        <td>Tempat lahir</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
@@ -118,7 +115,7 @@
                        <td class="alert-message">Spesialis wajib di isi</td>
                     </tr>
                     <tr>
-                        <td>Alamat</td>
+                        <td>Tanggal lahir</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
@@ -129,13 +126,13 @@
                        <td class="alert-message">Jadwal praktek wajib di isi</td>
                     </tr>
                     <tr>
-                        <td>Nomor Str</td>
+                        <td>Jenis kelamin</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
                     </tr>
                     <tr>
-                        <td>Tanggal bergabung</td>
+                        <td>Alamat </td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
@@ -146,7 +143,7 @@
                        <td class="alert-message">Kontak darurat wajib di isi</td>
                     </tr>
                     <tr>
-                        <td>Shift</td>
+                        <td>Keluhan</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
@@ -157,19 +154,18 @@
                        <td class="alert-message">Email wajib di isi</td>
                     </tr>
                     <tr>
-                        <td>Status</td>
+                        <td>Nomor pendaftaraan</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
                     </tr>
                     <tr>
-                        <td>Email</td>
-                        <td>:</td>
-                        <td><input type="text"></td>
-                        <td class="detail">detail</td>
+                        <td></td>
+                       <td></td>
+                       <td class="alert-message">Password wajib di isi</td>
                     </tr>
                     <tr>
-                        <td>Password</td>
+                        <td>Nomor whatsapp</td>
                         <td>:</td>
                         <td><input type="text"></td>
                         <td class="detail">detail</td>
@@ -189,6 +185,6 @@
         </div>
     </div>
     <script src="../js/admin.js"></script>
-    <script src="../js/apoteker.js"></script>
+    <script src="../js/pasien.js"></script>
 </body>
 </html>

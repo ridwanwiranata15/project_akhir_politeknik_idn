@@ -12,3 +12,6 @@ td button:nth-child(3){
 .doctor-padding{
     padding-right: 110px;
 }
+td button:first-child{
+    background-color: rgb(255, 255,0);
+}

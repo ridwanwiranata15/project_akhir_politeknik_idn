@@ -1,0 +1,17 @@
+.pasien-px{
+    padding-right: 105px;
+}
+td:last-child button:first-child{
+    background-color: yellow;
+}
+td:last-child button:nth-child(2){
+    background-color: blue;
+    color: white;
+}
+td:last-child button:last-child{
+    background-color: red;
+    color: white;
+}
+.pasien-hide{
+    display: none;
+}
